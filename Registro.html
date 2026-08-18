@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Conferencia</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f2f4;
+            color: #1f2933;
+        }
+
+        .contenedor {
+            width: 100%;
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px 40px;
+            background: #f1f2f4;
+            border-left: 2px solid #5b4fcf;
+        }
+
+        /* Lado izquierdo */
+        .informacion {
+            width: 46%;
+            padding-right: 30px;
+        }
+
+        .informacion h1 {
+            font-size: 20px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        .informacion p {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #5f6975;
+            margin-bottom: 14px;
+        }
+
+        .beneficios {
+            list-style: none;
+        }
+
+        .beneficios li {
+            font-size: 12px;
+            color: #5f6975;
+            margin: 14px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .check {
+            width: 14px;
+            height: 14px;
+            background: #126270;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 9px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Formulario MÁS GRANDE */
+        .formulario {
+            width: 48%;
+            max-width: 500px;
+            min-height: 300px;
+            background: #ffffff;
+            padding: 35px 30px 30px;
+            border-radius: 12px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .grupo {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 1.4px;
+            font-weight: bold;
+            color: #4f5964;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            border: 1px solid #d5d9de;
+            border-radius: 3px;
+            padding: 0 12px;
+            font-size: 14px;
+            color: #555;
+            background: #fafafa;
+        }
+
+        input::placeholder {
+            color: #a7adb5;
+        }
+
+        .boton {
+            width: 100%;
+            height: 44px;
+            border: none;
+            border-radius: 3px;
+            background: #146270;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+            margin-top: 2px;
+        }
+
+        .boton:hover {
+            background: #0f5260;
+        }
+
+        .terminos {
+            text-align: center;
+            font-size: 9px;
+            color: #7d858d;
+            margin-top: 16px;
+        }
+
+        /* Estilos del Menú */
+        header {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Estilos del Panel Principal */
+        .hero {
+            display: flex;
+            padding: 50px;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .btn {
+            background: #0000a0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 700px) {
+
+            .contenedor {
+                flex-direction: column;
+                gap: 30px;
+                padding: 40px 20px;
+            }
+
+            .informacion,
+            .formulario {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .formulario {
+                min-height: auto;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <strong>Summit Innovación Digital</strong>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Cronograma</a></li>
+                <li><a href="Registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contenedor">
+
+        <div class="informacion">
+
+            <h1>Asegura tu lugar en el futuro.</h1>
+
+            <p>
+                Las plazas son limitadas. Regístrate ahora para garantizar tu acceso
+                a todas las conferencias, zonas de networking y material exclusivo
+                del evento.
+            </p>
+
+            <ul class="beneficios">
+
+                <li>
+                    <span class="check">✓</span>
+                    Acceso a todas las keynotes
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Certificado de participación digital
+                </li>
+
+                <li>
+                    <span class="check">✓</span>
+                    Networking lunch incluido
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="formulario">
+
+            <div class="grupo">
+
+                <label>Nombre Completo</label>
+
+                <input
+                    type="text"
+                    placeholder="Ej. María García">
+
+            </div>
+
+
+            <div class="grupo">
+
+                <label>Correo Electrónico</label>
+
+                <input
+                    type="email"
+                    placeholder="correo@empresa.com">
+
+            </div>
+
+
+            <button class="boton">
+                Registrarme Ahora 👥
+            </button>
+
+
+            <p class="terminos">
+                Al registrarte aceptas nuestros términos de privacidad.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

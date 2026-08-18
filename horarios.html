@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Innovación Digital 2024</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        }
+        
+        /* Estilos del Menú */
+        header { 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: white; 
+            padding: 15px 40px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid #ddd; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            gap: 20px; 
+            padding: 0; 
+            margin: 0; 
+        }
+
+        nav a { 
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+            transition: color 0.2s; 
+        }
+
+        nav a:hover { 
+            color: #0000a0; 
+        }
+        
+     
+
+
+        /* ==============================
+           ESTILOS DEL CRONOGRAMA
+           ============================== */
+
+        .schedule-section {
+            padding: 60px 40px;
+            background-color: #ffffff;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #0000a0;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Contenedor de la tabla */
+        .schedule-table-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        /* Tabla */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Encabezados */
+        .schedule-table th {
+            background-color: #0000a0;
+            color: white;
+            padding: 16px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        /* Celdas */
+        .schedule-table td {
+            padding: 16px;
+            border-bottom: 1px solid #ddd;
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        /* Filas alternadas */
+        .schedule-table tbody tr:nth-child(even) {
+            background-color: #f5f6fb;
+        }
+
+        /* Efecto al pasar el mouse */
+        .schedule-table tbody tr:hover {
+            background-color: #e9e9f8;
+        }
+
+        /* Columna de horario */
+        .schedule-table td:first-child {
+            color: #0000a0;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* Columna de conferencia */
+        .schedule-table td:nth-child(2) {
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Adaptación para celulares */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .schedule-section {
+                padding: 40px 20px;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+        <strong>Summit Innovación Digital</strong>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="horarios.html">Cronograma</a></li>
+                <li><a href="Registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- SECCIÓN CRONOGRAMA -->
+
+    <section id="cronograma" class="schedule-section">
+
+        <div class="section-title">
+
+            <h2>Cronograma de Conferencias</h2>
+
+            <p>
+                Conoce los horarios y la agenda de nuestros ponentes expertos.
+            </p>
+
+        </div>
+
+
+        <div class="schedule-table-container">
+
+            <table class="schedule-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Hora</th>
+                        <th>Conferencia</th>
+                        <th>Experto</th>
+                        <th>Cargo / Especialidad</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <!-- Conferencia 1 -->
+                    <tr>
+
+                        <td>
+                            08:30 AM - 09:15 AM
+                        </td>
+
+                        <td>
+                            Apertura y Tendencias Tecnológicas 2024
+                        </td>
+
+                        <td>
+                            Dra. Valeria Gómez
+                        </td>
+
+                        <td>
+                            Directora de Innovación en TechCorp
+                        </td>
+
+                    </tr>
+
+
+                    <!-- Conferencia 2 -->
+                    <tr>
+
+                        <td>
+                            09:30 AM - 10:15 AM
+                        </td>
+
+                        <td>
+                            Inteligencia Artificial Aplicada al Desarrollo Web
+                        </td>
+
+                        <td>
+                            Ing. Carlos Mendoza
+                        </td>
+
+                        <td>
+                            Lead AI Developer en InnovaSoft
+                        </td>
+
+                    </tr>
+
+
+                    <!-- Conferencia 3 -->
+                    <tr>
+
+                        <td>
+                            10:30 AM - 11:15 AM
+                        </td>
+
+                        <td>
+                            Ciberseguridad en Entornos Cloud y Servidores
+                        </td>
+
+                        <td>
+                            MSc. Roberto Silva
+                        </td>
+
+                        <td>
+                            Especialista en Seguridad de la Información
+                        </td>
+
+                    </tr>
+
+
+                    <!-- Conferencia 4 -->
+                    <tr>
+
+                        <td>
+                            11:30 AM - 12:15 PM
+                        </td>
+
+                        <td>
+                            Arquitectura de Microservicios Escalables
+                        </td>
+
+                        <td>
+                            Ing. Ana Lucía Rivas
+                        </td>
+
+                        <td>
+                            Cloud Architect en DevData
+                        </td>
+
+                    </tr>
+
+
+                    <!-- Conferencia 5 -->
+                    <tr>
+
+                        <td>
+                            02:00 PM - 02:45 PM
+                        </td>
+
+                        <td>
+                            Diseño de Experiencia de Usuario (UX/UI) Moderno
+                        </td>
+
+                        <td>
+                            Lic. Sofía Martínez
+                        </td>
+
+                        <td>
+                            Senior UX Designer
+                        </td>
+
+                    </tr>
+
+
+                    <!-- Conferencia 6 -->
+                    <tr>
+
+                        <td>
+                            03:00 PM - 04:00 PM
+                        </td>
+
+                        <td>
+                            Panel: El Futuro de la Transformación Digital
+                        </td>
+
+                        <td>
+                            Panel con Ponentes Invitados
+                        </td>
+
+                        <td>
+                            Moderador: Ing. Fernando López
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
